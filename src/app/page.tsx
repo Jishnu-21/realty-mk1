@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from "next/image";
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -40,7 +41,16 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full h-screen bg-gradient-to-bl from-pink-500 to-purple-600 flex flex-col justify-center items-center text-white animate-fadeIn">
+    <div className="w-full h-screen bg-gradient-to-bl from-pink-500 to-purple-600 flex flex-col items-center text-white animate-fadeIn">
+      <div className="mt-10 mb-auto flex flex-col items-center">
+        <Image
+          src="/logo.svg" 
+          alt="Logo"
+          width={150}
+          height={150}
+        />
+        <h2 className="text-sm text-gray-700 font-bold uppercase m-0">Realty</h2>
+      </div>
       <h1 className="text-4xl sm:text-5xl text-center px-4 whitespace-nowrap">We are <b>Almost</b> there!</h1>
       <p className="text-center px-4">Stay tuned for something amazing!!!</p>
 
@@ -69,6 +79,10 @@ export default function Home() {
           <p className="text-sm sm:text-base lg:text-xl py-1 sm:py-2">secs</p>
         </div>
       </div>
+      
+      <footer className="text-center mt-auto pb-10">
+        <p>&copy; 2025 3rdshade Realty. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
