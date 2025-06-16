@@ -13,7 +13,7 @@ export default function Home() {
 
   const calculateTimeLeft = () => {
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 9); // Set target 9 days from now
+    targetDate.setDate(targetDate.getDate() + 10); // Set target 9 days from now
     targetDate.setHours(23, 59, 59, 999); // End of the 9th day
 
     const now = new Date();
@@ -46,10 +46,10 @@ export default function Home() {
         <Image
           src="/logo.svg" 
           alt="Logo"
-          width={150}
-          height={150}
+          width={250}
+          height={250}
         />
-        <h2 className="text-sm text-gray-700 font-bold uppercase m-0">Realty</h2>
+        <h2 className="text-lg text-gray-900 font-normal uppercase m-0 tracking-[.3em]">Realty</h2>
       </div>
       <h1 className="text-4xl sm:text-5xl text-center px-4 whitespace-nowrap">We are <b>Almost</b> there!</h1>
       <p className="text-center px-4">Stay tuned for something amazing!!!</p>
