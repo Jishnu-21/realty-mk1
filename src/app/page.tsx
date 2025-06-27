@@ -13,7 +13,7 @@ export default function Home() {
 
   const calculateTimeLeft = () => {
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 4); // Set target 9 days from now
+    targetDate.setDate(targetDate.getDate() + 1); // Set target 9 days from now
     targetDate.setHours(23, 59, 59, 999); // End of the 9th day
 
     const now = new Date();
